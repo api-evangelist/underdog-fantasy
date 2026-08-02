@@ -1,17 +1,38 @@
 aid: underdog-fantasy
 name: Underdog Fantasy
-description: 'Underdog Fantasy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Underdog (Underdog Sports, formerly Underdog Fantasy) is a Brooklyn,
+  New York based sports gaming company founded in 2020 by Jeremy Levine that operates
+  daily fantasy sports, pick''em, and — since 2025 — federally regulated sports prediction
+  markets on its own proprietary technology stack. Its consumer products include Classic
+  Pick''em, Pick''em Champions, Best Ball and other Draft Games, Streaks, Team Picks,
+  and the Underdog Predict prediction-markets exchange, delivered through iOS, Android,
+  and web apps rather than a public developer API. Underdog reached roughly $500M in
+  annual revenue within five years, was valued at $1.2B after a Spark Capital-led Series
+  C in March 2025, acquired CFTC-registered derivatives infrastructure in March 2026,
+  and in July 2026 was the subject of a proposed acquisition by IG Group. The company
+  publishes no developer portal, API documentation, or machine-readable API contract;
+  its public technical surface is limited to an RFC 9116 security.txt with a PGP key,
+  a Honeybadger-hosted status page covering its API and Stats services, and the Underdog-Inc
+  GitHub organization.'
+image: https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/67d86be30d981ef8b914a10f_big-fav.png
 url: https://raw.githubusercontent.com/api-evangelist/underdog-fantasy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Sports
+- Fantasy Sports
+- Sports Betting
+- Prediction Markets
+- Gaming
+- Entertainment
+- Consumer
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +41,53 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.underdogsports.com/
+- type: Website
   url: https://forgeglobal.com/underdog-fantasy_stock/
+- type: SignUp
+  url: https://app.underdogsports.com/register
+- type: Login
+  url: https://app.underdogsports.com/login
+- type: Support
+  url: https://help.underdogsports.com/en/
+- type: TermsOfService
+  url: https://legal.underdogsports.com/#terms-of-use
+- type: PrivacyPolicy
+  url: https://legal.underdogsports.com/#template-altl3g4-b
+- type: StatusPage
+  url: https://status.underdogfantasy.com/
+- type: GitHubOrganization
+  url: https://github.com/Underdog-Inc
+- type: Security
+  url: https://underdogfantasy.com/.well-known/security.txt
+- type: SecurityTxt
+  url: well-known/underdog-fantasy-security.txt
+- type: WellKnown
+  url: well-known/underdog-fantasy-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/underdog-fantasy-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/underdog-fantasy-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/underdog-fantasy-lifecycle.yml
+- type: Packages
+  url: packages/underdog-fantasy-packages.yml
+- type: LLMsTxt
+  url: llms/underdog-fantasy-llms.txt
+- type: Careers
+  url: https://www.underdogsports.com/careers
+- type: Press
+  url: https://www.underdogsports.com/news
+- type: Rules
+  url: https://app.underdogsports.com/rules
+- type: ResponsibleGaming
+  url: https://www.underdogsports.com/responsible-gaming-resources
+- type: iOSApp
+  url: https://apps.apple.com/us/app/underdog-fantasy-sports/id1514665962
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=com.underdogsports.fantasy
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

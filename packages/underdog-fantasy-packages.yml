@@ -1,0 +1,66 @@
+generated: '2026-08-02'
+method: searched
+source: npm registry search, PyPI, RubyGems, and the Underdog-Inc GitHub organization
+sdk_count: 0
+note: Underdog publishes no public API and ships no first-party API client SDK in any
+  registry. The one first-party package found on npm is an internal web code style
+  guide, not a client library, so no `SDKs` pointer is wired in apis.yml.
+packages:
+- language: javascript
+  registry: npm
+  name: '@underdogsports/web-code-style-guide'
+  version: 1.0.0-canary.3
+  url: https://www.npmjs.com/package/@underdogsports/web-code-style-guide
+  install: npm install @underdogsports/web-code-style-guide
+  repository: https://github.com/Underdog-Inc/web-code-style-guide
+  description: Underdog Sports code style guide for web projects
+  official: true
+  api_client: false
+  first_published: '2024-07-18'
+  last_modified: '2024-08-30'
+registries_probed:
+- registry: npm
+  result: One first-party package under the @underdogsports scope; no API client library.
+- registry: pypi
+  result: No package at underdog, underdogfantasy, underdog-fantasy or underdog-sports
+    (all HTTP 404).
+- registry: rubygems
+  result: No gem at underdog or underdog-fantasy (both HTTP 404).
+- registry: maven-central
+  result: No first-party artifact found.
+- registry: nuget
+  result: No first-party artifact found.
+- registry: pkg.go.dev
+  result: No first-party module found.
+- registry: packagist
+  result: No first-party package found.
+- registry: crates.io
+  result: No first-party crate found.
+mobile_apps:
+- platform: ios
+  name: Underdog Fantasy Sports
+  url: https://apps.apple.com/us/app/underdog-fantasy-sports/id1514665962
+  official: true
+- platform: android
+  package: com.underdogsports.fantasy
+  url: https://play.google.com/store/apps/details?id=com.underdogsports.fantasy
+  official: true
+github_organization:
+  url: https://github.com/Underdog-Inc
+  name: Underdog
+  location: Brooklyn, NY
+  created: '2020-04-14'
+  public_repos: 20
+  note: Predominantly forks of third-party Ruby/infra projects (flipper, quickfix,
+    console1984, mock_redis, openapi_first) plus internal tooling and hiring take-home
+    templates. Notable original repositories are `lifecycle` (TypeScript, turns pull
+    requests into ephemeral development environments), `background-agents` (TypeScript,
+    an open-source background agents coding system) and `superpowers` (an agentic skills
+    framework). None of them expose or document an Underdog API.
+x-evidence:
+- url: https://registry.npmjs.org/@underdogsports%2Fweb-code-style-guide
+  http_status: 200
+  fetched: '2026-08-02'
+- url: https://api.github.com/orgs/Underdog-Inc
+  http_status: 200
+  fetched: '2026-08-02'

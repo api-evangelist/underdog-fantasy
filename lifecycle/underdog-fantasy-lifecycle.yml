@@ -1,0 +1,57 @@
+generated: '2026-08-02'
+method: searched
+source: https://status.underdogfantasy.com/
+status_page: https://status.underdogfantasy.com/
+status_page_provider: Honeybadger
+status_page_components:
+- name: API
+  note: Reported operational with ~97ms average response time and 100% uptime over
+    the trailing 7 days as observed on 2026-08-02.
+- name: Stats
+  note: Reported operational with ~113ms average response time and 100% uptime over
+    the trailing 7 days as observed on 2026-08-02.
+incidents:
+  window_observed: June-August 2026
+  count: 0
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: Underdog publishes no public API and therefore no public API versioning policy.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No deprecation or Sunset/Deprecation (RFC 8594) policy is published. Product
+    and contest rule changes are communicated through the in-app rules pages and the
+    legal center, which version the terms of use (Fantasy Terms of Use v7.0, effective
+    2026-03-17).
+sla:
+  url: null
+  uptime_target: null
+policy_versioning:
+  source: https://legal.underdogsports.com/
+  note: The legal center versions each document with an explicit version number and
+    effective date, which is the closest thing Underdog publishes to a change policy.
+  documents:
+  - name: Fantasy Terms of Use
+    version: '7.0'
+    effective: '2026-03-17'
+    url: https://legal.underdogsports.com/#terms-of-use
+  - name: Arizona Fantasy Terms of Use
+    version: '1.0'
+    effective: '2025-11-12'
+    url: https://legal.underdogsports.com/#template-jev9ldigx
+  - name: Underdog Global Privacy Policy
+    url: https://legal.underdogsports.com/#template-altl3g4-b
+  - name: Sports Betting Terms of Use
+    url: https://legal.underdogsports.com/#template-xqaceptu9
+  - name: Sports Betting House Rules
+    url: https://legal.underdogsports.com/#template-cbdklng4w
+deprecated_operations: []
+x-evidence:
+- url: https://status.underdogfantasy.com/
+  http_status: 200
+  fetched: '2026-08-02'
+- url: https://legal.underdogsports.com/
+  http_status: 200
+  fetched: '2026-08-02'

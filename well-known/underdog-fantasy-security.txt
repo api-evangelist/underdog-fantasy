@@ -1,0 +1,32 @@
+# ============================
+# security.txt for Underdog
+# Woof Woof Woof 🐾
+# ============================
+
+# 👋 Hey Security Researchers!
+# Thanks for stopping by — we appreciate your help in keeping Underdog safe and fun for everyone.
+# Please use the info below to report any security issues responsibly.
+
+# Required fields:
+Contact: mailto:security@underdogsports.com
+# Yep, that's a real inbox — monitored by our security team, not a black hole, please be patient with us!
+
+Expires: 2027-04-13T00:00:00Z
+# We renew this yearly. If it's expired, someone probably dropped the ball. Poke us.
+
+Encryption: https://underdogsports.com/.well-known/udsecurity.asc
+# Optional but encouraged. If you're a crypto fan, encrypt your message.
+
+Preferred-Languages: en
+# We speak English, but we won't complain about emojis 🐶🚨
+
+Canonical: https://underdogsports.com/.well-known/security.txt
+# The official source for this file. If you're reading this elsewhere… maybe don't trust it?
+
+Hiring: https://underdogsports.com/careers
+# Want to join our pack? Keep an eye out for roles here!
+
+# ----------------------------
+# Have fun. Hack responsibly.
+#      Team Underdog
+# ----------------------------

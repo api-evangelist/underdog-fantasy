@@ -1,0 +1,62 @@
+generated: '2026-08-02'
+method: searched
+source: live probes of every Underdog host on 2026-08-02
+hosts_probed:
+- https://underdogfantasy.com
+- https://www.underdogfantasy.com
+- https://underdogsports.com
+- https://www.underdogsports.com
+- https://app.underdogsports.com
+- https://api.underdogfantasy.com
+- https://stats.underdogfantasy.com
+- https://underdogpredict.com
+- https://legal.underdogsports.com
+- https://help.underdogsports.com
+host: https://underdogfantasy.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  content_type: text/plain; charset=utf-8
+  file: underdog-fantasy-security.txt
+  spec: RFC 9116
+- path: /.well-known/udsecurity.asc
+  status: 200
+  file: underdog-fantasy-security-key.asc
+  spec: OpenPGP public key referenced by the security.txt Encryption field
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /.well-known/assetlinks.json
+  status: 404
+- path: /.well-known/apple-app-site-association
+  status: 404
+- path: /.well-known/change-password
+  status: 404
+- path: /.well-known/dnt-policy.txt
+  status: 404
+other_hosts:
+- host: https://underdogsports.com
+  note: All /.well-known/* paths return 404, including the /.well-known/security.txt
+    that underdogfantasy.com's security.txt declares as its Canonical location.
+- host: https://api.underdogfantasy.com
+  note: Non-public application backend. Root and every /.well-known/* and spec path
+    probed returned 404; /.well-known/security.txt returned 200 (same document as the
+    apex host).
+- host: https://app.underdogsports.com
+  note: Cloudflare returns HTTP 403 to non-browser clients for every path, so no /.well-known/
+    document could be observed.
+- host: https://legal.underdogsports.com
+  note: REJECTED as a false positive. This Webflow-hosted single-page app answers HTTP
+    200 with the same gzipped HTML body for every path, including /openapi.json and
+    /.well-known/agent-card.json. No document here was recorded.
+- host: https://underdogpredict.com
+  note: All /.well-known/* paths return 404.
