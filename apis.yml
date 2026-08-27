@@ -42,8 +42,6 @@ maintainers:
 common:
 - type: Website
   url: https://www.underdogsports.com/
-- type: Website
-  url: https://forgeglobal.com/underdog-fantasy_stock/
 - type: SignUp
   url: https://app.underdogsports.com/register
 - type: Login
