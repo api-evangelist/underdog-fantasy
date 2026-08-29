@@ -14,6 +14,17 @@ description: 'Underdog (Underdog Sports, formerly Underdog Fantasy) is a Brookly
   its public technical surface is limited to an RFC 9116 security.txt with a PGP key,
   a Honeybadger-hosted status page covering its API and Stats services, and the Underdog-Inc
   GitHub organization.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/67d86be30d981ef8b914a10f_big-fav.png
 url: https://raw.githubusercontent.com/api-evangelist/underdog-fantasy/refs/heads/main/apis.yml
 x-type: company
