@@ -64,55 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Underdog (Underdog Sports, formerly Underdog Fantasy) is a Brooklyn, New York based sports gaming
-company founded in 2020 by Jeremy Levine. It operates daily fantasy sports, pick'em contests, and —
-since 2025 — federally regulated sports prediction markets on its own proprietary technology stack.
+Underdog (Underdog Sports, formerly Underdog Fantasy) is a Brooklyn, New York based sports gaming company founded in 2020 by Jeremy Levine that operates daily fantasy sports, pick'em, and — since 2025 — federally regulated sports prediction markets on its own proprietary technology stack. Its consumer products include Classic Pick'em, Pick'em Champions, Best Ball and other Draft Games, Streaks, Team Picks, and the Underdog Predict prediction-markets exchange, delivered through iOS, Android, and web apps rather than a public developer API. Underdog reached roughly $500M in annual revenue within five years, was valued at $1.2B after a Spark Capital-led Series C in March 2025, acquired CFTC-registered derivatives infrastructure in March 2026, and in July 2026 was the subject of a proposed acquisition by IG Group. The company publishes no developer portal, API documentation, or machine-readable API contract; its public technical surface is limited to an RFC 9116 security.txt with a PGP key, a Honeybadger-hosted status page covering its API and Stats services, and the Underdog-Inc GitHub organization.
 
-- https://www.underdogsports.com/
-- https://forgeglobal.com/underdog-fantasy_stock/
+**Areas:** Company · Sports · Fantasy Sports · Sports Betting · Prediction Markets · Gaming · Entertainment · Consumer · Mobile
 
-## API status
+## Underdog Fantasy on APIs.io
 
-**Underdog publishes no public API.** There is no developer portal, no API documentation, no
-OpenAPI/Swagger document, no GraphQL endpoint, no MCP server, and no A2A agent card. Contract
-discovery on 2026-08-02 probed `underdogfantasy.com`, `underdogsports.com`,
-`api.underdogfantasy.com`, `stats.underdogfantasy.com`, `app.underdogsports.com`,
-`underdogpredict.com`, `legal.underdogsports.com` and `help.underdogsports.com` for
-`/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`,
-`/redoc`, `/graphql`, `/llms.txt`, `/.well-known/agent-card.json` and `/.well-known/agent.json`.
-Every probe returned 404 or 403.
+Everything profiled for Underdog Fantasy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/underdog-fantasy/](https://apis.io/providers/underdog-fantasy/)** — or go straight to one of the APIs or properties below.
 
-`api.underdogfantasy.com` is the non-public backend for the mobile and web applications; it returns
-404 at the root and for every spec path. `legal.underdogsports.com` answers HTTP 200 with the same
-Webflow single-page-app HTML for *every* path and was rejected as a false positive.
+### Published properties
 
-Third-party "Underdog odds API" products are scrapers or aggregators run by other companies.
-`docs.underdogprotocol.com` and `underdog.readme.io` belong to Underdog Protocol, an unrelated
-Solana NFT infrastructure company.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## What the company does publish
+#### Security (2)
 
-| Surface | Location |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Underdog Fantasy Domain Security](https://apis.io/security/underdog-fantasy/underdog-fantasy-domain-security/)
+- [Underdog Fantasy Vulnerability Disclosure](https://apis.io/security/underdog-fantasy/underdog-fantasy-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.underdogsports.com/)
+- [Sign up](https://app.underdogsports.com/register)
+- [Support](https://help.underdogsports.com/en/)
+- [Security](https://underdogfantasy.com/.well-known/security.txt)
+- [Terms of service](https://legal.underdogsports.com/#terms-of-use)
+- [Privacy policy](https://legal.underdogsports.com/#template-altl3g4-b)
+- [GitHub](https://github.com/Underdog-Inc)
+- [Status](https://status.underdogfantasy.com/)
+
+## API Evangelist rating
+
+**Kin Score 11.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| security.txt (RFC 9116) | https://underdogfantasy.com/.well-known/security.txt |
-| PGP public key | https://underdogfantasy.com/.well-known/udsecurity.asc |
-| Status page (Honeybadger) | https://status.underdogfantasy.com/ — components: API, Stats |
-| Legal center | https://legal.underdogsports.com/ |
-| Help center | https://help.underdogsports.com/en/ |
-| GitHub organization | https://github.com/Underdog-Inc |
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 6.6 |
 
-## Artifacts in this repo
+**Agent readiness 0.0** — human-only
 
-- `well-known/` — verbatim security.txt + PGP key, plus the full `/.well-known/` probe index
-- `security/` — domain security posture (TLS/HSTS/DNSSEC/CAA/SPF/DMARC) and the vulnerability
-  disclosure profile derived from security.txt
-- `lifecycle/` — status page and legal-document versioning
-- `packages/` — package-registry and GitHub organization survey (no API client SDK exists)
-- `llms/` — generated `llms.txt`
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-## Known provider issues worth reporting
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
 
-The security.txt served from `underdogfantasy.com` declares
-`Canonical: https://underdogsports.com/.well-known/security.txt` and
-`Encryption: https://underdogsports.com/.well-known/udsecurity.asc`, but **both of those URLs return
-HTTP 404**. Under RFC 9116 a Canonical URI that does not serve the file is a conformance defect.
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/underdog-fantasy/](https://apis.io/providers/underdog-fantasy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Underdog Fantasy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/underdog-fantasy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
